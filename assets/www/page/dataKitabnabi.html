@@ -1,0 +1,60 @@
+<html>
+ <head>
+	<link href="../css/global_style.css" rel="stylesheet" type="text/css">
+	<script src="../js/global_function.js" language="JavaScript" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.3.1.min.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+	<script>
+		function getUrlVars()
+		{
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++)
+			{
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		}
+		function showNabi(getNabi)
+		{
+			document.getElementById(getNabi).style.display='block';
+		}
+		
+		window.onload = function () {
+			var getGet = getUrlVars()["data"];
+			showNabi(getGet);
+		};
+		
+		//var getAlamat = getUrlVars()["nabi"];
+		//document.getElementById('adam').style.display = 'block';
+		//document.getElementByClass("adam").style.visibility="visible";
+	</script>
+	<title>4 Kitab Nabi</title>
+ </head>
+ <body id="back">
+	<div id="topNabi" data-role="header" data-position="fixed">
+		<h1>Kitab Nabi</h1>
+		<a data-icon="check" data-theme="b" href="contentLaunch.html">Back</a>
+	</div>
+	<div id="nTaurat" style="display:none; margin:15px;">
+		<h3>Kitab Taurat - Nabi Musa AS</h3>
+        <p align="justify">Kitab Taurat berisi tentang 10 perintah Allah yang diperuntukkan untuk umat Nabi Musa. Kesepuluh perintah Allah tersebut antara lain: pengakuan ke-Esa-an Allah Swt dan mencintai-Nya, larangan menyembah patung dan berhala,  menyebut nama Allah Swt dengan hormat, memuliakan hari Sabtu, menghormati kedua orang tua, larangan membunuh manusia, larangan berzina, larangan mencuri, larangan berbohong, dan larangan memiliki barang orang lain dengan cara yang tidak benar.</p>
+	</div>
+	<div id="nZabur" style="display:none; margin:15px;">
+		<h3>Kitab Zabur - Nabi Daud AS</h3>
+        <p align="justify">Kitab Zabur berisi 150 syair ataupun nyanyian yang dilantunkan oleh nabi Daud. Kitab Zabur tidak berisi perintah-perintah Allah Swt karena nabi Daud masih menjalankan Kitab Taurat. Syair maupun nyanyian-nyanyian tersebut secara garis besar terdiri dari lima jenis, yaitu: doa individu, ratapan jamaah, nyanyian untuk raja, nyanyian memuji Tuhan, dan nyanyian rasa syukur.</p>
+    </div>
+	<div id="nInjil" style="display:none; margin:15px;">
+		<h3>Kitab Injil - Nabi Isa AS</h3>
+        <p align="justify">Injil berarti kabar gembira. Kita ini diturunkan oleh Allah Swt kepada Nabi Isa sebagai pembawa kabar gembira bahwa sebentar lagi akan datang sang penyelamat yaitu nabi Muhammad. Berbeda dengan kitab sebelumnya, Injil berisi tentang pembersihan jiwa dari nafsu-nafsu dunia.</p>
+	</div>
+	<div id="nAlquran" style="display:none; margin:15px;">
+		<h3>Kitab Al Qur'an - Nabi Muhammad SAW</h3>
+		<p align="justify">Al Quran adalah mukjizat terbesar nabi Muhammad. Di dalam Al Quran ini memuat hukum-hukum Allah Swt untuk umat manusia baik hukum dalam berhubungan sesama manusia maupun dalam hubungannya kepada Allah Swt. Kitab Taurat, Zabur, dan Injil terdapat di dalam Al Quran karena Al Quran merupakan penyempurna dari kitab-kitab sebelumnya.</p>
+	</div>
+ </body>
+</html>

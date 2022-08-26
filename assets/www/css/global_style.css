@@ -1,0 +1,18 @@
+#back
+{
+	background: #f9f9f9;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#eee));
+	background-image: -webkit-linear-gradient(#f9f9f9,#eee);
+	background-image: -moz-linear-gradient(#f9f9f9,#eee);
+	background-image: -ms-linear-gradient(#f9f9f9,#eee);
+	background-image: -o-linear-gradient(#f9f9f9,#eee);
+	background-image: linear-gradient(#f9f9f9,#eee);
+}
+#content
+{
+	font-family: "Calibri";
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:25px;
+	overflow:hidden;
+}
